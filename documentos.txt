@@ -1,0 +1,1 @@
+aplicacao.txt fox.txt rato.txt teste.txt
