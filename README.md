@@ -1,7 +1,22 @@
-# bloomfilter
-Bloom Filter and MinHash techniques built in MatLab
+I use Matlab2020b and code didn't work for me properly so i made a few changes just for some of the functions
 
-Project built by me, Cristiano Vagos and Ariel Bastos for subject MPEI (Métodos Probabilísticos para Engenharia Informática).
-Grade: 15/20
+I also added little bit of lhbf BloomFilter from python into this code 
 
-For more information about the project itself and what each file / function does, read pdf file (in Portuguese) about it.
+
+
+% n: Size of Bloom Filter
+% k: Number of Hash Functions to be used
+
+filter = BloomFilter(n, k); % make the BloomFilter
+
+new_filter = clear(filter); %make a new BF out of previous one..
+
+probability = getFalsePositiveProbability(filter); %give you the FPP of BF
+
+new_filter = insert(old_filter, string); %insert into BF "string" 
+
+isMember(filter, string); %check for "string" in BF and return true or false *true might be a False Positive
+
+
+
+
