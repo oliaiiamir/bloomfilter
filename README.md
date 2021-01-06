@@ -4,14 +4,14 @@ I also added little bit of lhbf BloomFilter from python into this code
 
 
 
-% n: Size of Bloom Filter
-% k: Number of Hash Functions to be used
+ n: Size of Bloom Filter
+ k: Number of Hash Functions to be used
 
-filter = BloomFilter(n, k); % make the BloomFilter
+#filter = BloomFilter(n, k); % make the BloomFilter
 
-new_filter = clear(filter); %make a new BF out of previous one..
+#new_filter = clear(filter); %make a new BF out of previous one..
 
-probability = getFalsePositiveProbability(filter); %give you the FPP of BF
+#probability = getFalsePositiveProbability(filter); %give you the FPP of BF
 
 new_filter = insert(old_filter, string); %insert into BF "string" 
 
